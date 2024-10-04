@@ -138,7 +138,23 @@ siralisayilar = kucukSayilar.sort((a, b) => a - b);
 
 // 3f çözümü
 
-/* kodlar buraya */
+const tekrarEdenSayilar = {};
+
+for (const sayi of sayilar) {
+  if (tekrarEdenSayilar[sayi]) {
+    tekrarEdenSayilar[sayi]++;
+  } else {
+    tekrarEdenSayilar[sayi] = 1;
+  }
+}
+
+for (const sayi in tekrarEdenSayilar) {
+  if (tekrarEdenSayilar[sayi] > 1) {
+    const tekrarSayisi = tekrarEdenSayilar[sayi];
+    const string = `${sayi} sayısı ${tekrarSayisi} kere tekrar edilmiştir`;
+    tekraredensayilar.push(string);
+  }
+}
 
 /*  Bu satırın aşağısındaki kodları lütfen değiştirmeyin  */
 
