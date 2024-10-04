@@ -134,7 +134,7 @@ besyuzdenkucuksayilar.push(kucukSayilar);
 
 // 3e çözümü
 
-/* kodlar buraya */
+siralisayilar = kucukSayilar.sort((a, b) => a - b);
 
 // 3f çözümü
 
