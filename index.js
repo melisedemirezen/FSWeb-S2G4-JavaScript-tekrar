@@ -106,7 +106,14 @@ let ucetambolunenler,
 
 // 3a çözümü
 
-/* kodlar buraya */
+enkucuk = sayilar[0];
+for (let i = 0; i < sayilar.length; i++) {
+  if (sayilar[i] < enkucuk) {
+    enkucuk = sayilar[i];
+  } else if (sayilar[i] > enbuyuk) {
+    enbuyuk = sayilar[i];
+  }
+}
 
 // 3b çözümü:
 
